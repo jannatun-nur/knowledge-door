@@ -24,16 +24,16 @@ const Banner = () => {
       <img
         src={slider1}
         alt="image 1"
-        className="h-[400px] w-full object-cover"
+        className=" h-[300px] lg:h-[450px] w-full object-cover bg-gradient-to-r from-gray-800 via-gray-300 to-gray-100"
       />
       <img
         src={slider2}
-        className="h-[400px] w-full object-cover"
+        className=" h-[300px] lg:h-[450px] w-full object-cover"
       />
       <img
         src={slider3}
         alt="image 3"
-        className="h-[400px] w-full object-cover"
+        className=" h-[300px] lg:h-[450px] w-full object-cover"
       />
     </Carousel>
   );
