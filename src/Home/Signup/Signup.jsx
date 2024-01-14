@@ -147,7 +147,7 @@ const Signup = () => {
             </div>
             <p className="px-6 text-sm text-center text-[#AD6A34] font-serif">
               Already have accout?
-              <Link to="/login">Login Here</Link>
+              <Link to="/signin">Login Here</Link>
             </p>
           </div>
         </form>
