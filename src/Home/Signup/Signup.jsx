@@ -45,25 +45,24 @@ const Signup = () => {
            return
        }
        else if(!/[A-Z]/.test(password)){
-           setSignupError('password do not have capital letter ')
-           return
-       }
-   
+        setSignupError('password do not have capital letter ');
+        
+        return;
+      }
    
    createUserWithEmailAndPassword(auth, email, password)
    .then(result =>{
      console.log(result.user);
      setSucces()
-     Swal.fire({
-       position: "top-center",
-       icon: "success",
-       title: "You have created an account",
-       showConfirmButton: false,
-       timer: 1500
-     });
+   
    })
    .catch(error=>{
-     console.log(error);
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong!",
+     
+    });
     setSignupError(error.message)
    })
   }
@@ -145,12 +144,14 @@ const Signup = () => {
             </p>
           </div>
         </form>
-        {/* {
+
+        
+        {
          signupError && <p className=" font-semibold text-red-500">{signupError}</p>
       }
       {
           succes && <p className="text-green-700  font-semibol">{succes}</p>
-      } */}
+      }
       </div>
     </div>
   );
