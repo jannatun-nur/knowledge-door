@@ -75,7 +75,7 @@ const Signup = () => {
   }
   return (
     <div className="flex flex-1 justify-around bg-white">
-      <div className="w-64 mt-20">
+      <div className=" w-48 lg:w-64 lg:mt-20 mt-32">
         <img src={gif} alt="" />
       </div>
 
@@ -96,11 +96,11 @@ const Signup = () => {
                 name="Username"
                 id="Username"
                 placeholder="Username"
-                className="w-full px-3 py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none"
+                className="w-full px-2 lg:px-3  lg:py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none"
               />
             </div>
             <div>
-              <div className="flex justify-between mb-2 text-white font-semibold">
+              <div className="flex justify-between mb-1 lg:mb-2 text-white font-semibold">
                 <label className="text-sm">Address</label>
               </div>
               <input
@@ -108,7 +108,7 @@ const Signup = () => {
                 name="address"
                 id="address"
                 placeholder="address"
-                className="w-full px-3 py-2 rounded-md bg-white border-amber-700 text-[#AD6A34] border-none"
+                className="w-full px-2 lg:px-3  lg:py-2 rounded-md bg-white border-amber-700 text-[#AD6A34] border-none"
               />
             </div>
             <div>
@@ -120,7 +120,7 @@ const Signup = () => {
                 name="email"
                 id="email"
                 placeholder="@gmail.com"
-                className="w-full px-3 py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none"
+                className="w-full px-2 lg:px-3  lg:py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none"
               />
             </div>
             <div>
@@ -132,7 +132,7 @@ const Signup = () => {
                 name="password"
                 id="password"
                 placeholder="*****"
-                className="w-full px-3 py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none "
+                className="w-full px-2 lg:px-3 lg:py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none "
               />
             </div>
           </div>
@@ -140,14 +140,14 @@ const Signup = () => {
             <div>
               <button
                 type="submit"
-                className="w-full px-8 py-3 font-semibold rounded-md bg-[#AD6A34] text-white font-serif"
+                className="w-full px-3 lg:px-8 py-1 lg:py-3 font-semibold rounded-md bg-[#AD6A34] text-white font-serif"
               >
                 Sign Up
               </button>
             </div>
-            <p className="px-6 text-sm text-center text-[#AD6A34] font-serif">
+            <p className="px-3 lg:px-6 text-xs lg:text-sm text-center text-[#AD6A34] font-serif">
               Already have accout?
-              <Link to="/signin">Login Here</Link>
+              <Link to="/signin" className="text-xs lg:text-sm">Login Here</Link>
             </p>
           </div>
         </form>
