@@ -1,7 +1,72 @@
 import { Link } from "react-router-dom";
 import gif from "../../../public/assets/image/signup.gif";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import app from "../../../public/firebase/firebase.config";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../../public/Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Signup = () => {
+
+  const auth = getAuth(app);
+    
+  const {createUser}=useContext(AuthContext)
+  
+  
+  const [signupError , setSignupError] = useState('')
+  const [succes,  setSucces] = useState('')
+
+  const handleSignUp = (e) =>{
+    e.preventDefault();
+    
+
+    const name = e.target.name.value;
+    const address = e.target.address.value
+   const email = e.target.email.value;
+   const password = e.target.password.value;
+   console.log(name, address, email ,password);
+
+
+
+   createUser(email, password)
+   .then(result =>{
+       console.log(result.user);
+   })
+   .catch( error =>{
+       console.error(error)
+   })
+   
+       //    reset error
+       setSignupError('');
+       setSucces('')
+   
+       if(password.length <6){
+           setSignupError('password is less than 8 characters')
+           return
+       }
+       else if(!/[A-Z]/.test(password)){
+           setSignupError('password do not have capital letter ')
+           return
+       }
+   
+   
+   createUserWithEmailAndPassword(auth, email, password)
+   .then(result =>{
+     console.log(result.user);
+     setSucces()
+     Swal.fire({
+       position: "top-center",
+       icon: "success",
+       title: "You have created an account",
+       showConfirmButton: false,
+       timer: 1500
+     });
+   })
+   .catch(error=>{
+     console.log(error);
+    setSignupError(error.message)
+   })
+  }
   return (
     <div className="flex flex-1 justify-around bg-white">
       <div className="w-64 mt-20">
@@ -14,7 +79,7 @@ const Signup = () => {
             Sign Up to access your account
           </p>
         </div>
-        <form className="space-y-12">
+        <form onSubmit={handleSignUp} className="space-y-12">
           <div className="space-y-4">
             <div>
               <div className="flex justify-between mb-2 text-white font-semibold">
