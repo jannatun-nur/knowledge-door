@@ -140,7 +140,7 @@ const Signup = () => {
             <div>
               <button
                 type="submit"
-                className="w-full px-3 lg:px-8 py-1 lg:py-3 font-semibold rounded-md bg-[#AD6A34] text-white font-serif"
+                className="lg:w-full px-3 lg:px-8 py-1 lg:py-3 text-xs lg:text-xl  rounded-md bg-[#AD6A34] text-white"
               >
                 Sign Up
               </button>
@@ -157,7 +157,7 @@ const Signup = () => {
          signupError && <p className=" font-semibold text-red-500">{signupError}</p>
       }
       {
-          succes && <p className="text-green-700  font-semibol">{succes}</p>
+          succes && <p className="text-green-700  font-semibold">{succes}</p>
       }
       </div>
     </div>

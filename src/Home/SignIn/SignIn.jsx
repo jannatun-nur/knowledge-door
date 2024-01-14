@@ -63,7 +63,7 @@ const SignIn = () => {
     
     return (
         <div className="flex flex-1 justify-around bg-white">
-        <div className="w-52 lg:w-86 mt-32 lg:mt-20">
+        <div className="w-52 lg:w-96 mt-32 lg:mt-20 ">
           <img src={gif} alt="" />
         </div>
   
@@ -105,7 +105,7 @@ const SignIn = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-28 lg:w-full lg:px-8 py-1 lg:py-3 text-xs lg:text-sm rounded-md bg-[#AD6A34] text-white "
+                  className="w-28 lg:w-full lg:px-8 py-1 lg:py-3 text-xs lg:text-xl rounded-md bg-[#AD6A34] text-white "
                 >
                   Sign In
                 </button>
@@ -118,12 +118,12 @@ const SignIn = () => {
           </form>
   
           
-          {/* {
-           signupError && <p className=" font-semibold text-red-500">{signupError}</p>
+          {
+           signinError && <p className=" font-semibold text-red-500">{signinError}</p>
         }
         {
             succes && <p className="text-green-700  font-semibol">{succes}</p>
-        } */}
+        }
         </div>
       </div>
     );
