@@ -54,6 +54,13 @@ const Signup = () => {
    .then(result =>{
      console.log(result.user);
      setSucces()
+     Swal.fire({
+      position: "top-center",
+      icon: "success",
+      title: "You have created an account",
+      showConfirmButton: false,
+      timer: 1500
+    });
    
    })
    .catch(error=>{
