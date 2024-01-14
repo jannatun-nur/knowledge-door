@@ -63,21 +63,21 @@ const SignIn = () => {
     
     return (
         <div className="flex flex-1 justify-around bg-white">
-        <div className="w-86 mt-20">
+        <div className="w-52 lg:w-86 mt-32 lg:mt-20">
           <img src={gif} alt="" />
         </div>
   
         <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10  w-1/2">
           <div className="mb-8 text-center">
             <p className="text-sm lg:text-2xl text-[#AD6A34] font-serif">
-              Sign Up to access your account
+              Sign In Here
             </p>
           </div>
           <form onSubmit={handleSignin} className="space-y-12">
             <div className="space-y-4">
              
               <div>
-                <label className="block mb-2 text-sm text-white font-semibold">
+                <label className="block mb-1 lg:mb-2 text-xs lg:text-sm text-white font-semibold">
                   Email address
                 </label>
                 <input
@@ -85,11 +85,11 @@ const SignIn = () => {
                   name="email"
                   id="email"
                   placeholder="@gmail.com"
-                  className="w-full px-3 py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none"
+                  className="w-full lg:px-3 px-1 lg:py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none"
                 />
               </div>
               <div>
-                <div className="flex justify-between mb-2 text-white font-semibold">
+                <div className="flex justify-between lg:mb-2 text-white font-semibold">
                   <label className="text-sm">Confirm Password</label>
                 </div>
                 <input
@@ -97,7 +97,7 @@ const SignIn = () => {
                   name="password"
                   id="password"
                   placeholder="*****"
-                  className="w-full px-3 py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none "
+                  className="w-full lg:px-3 px-1 lg:py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none "
                 />
               </div>
             </div>
@@ -105,14 +105,14 @@ const SignIn = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-full px-8 py-3 font-semibold rounded-md bg-[#AD6A34] text-white font-serif"
+                  className="w-28 lg:w-full lg:px-8 py-1 lg:py-3 text-xs lg:text-sm rounded-md bg-[#AD6A34] text-white "
                 >
                   Sign In
                 </button>
               </div>
-              <p className="px-6 text-sm text-center text-[#AD6A34] font-serif">
-                Already have accout?
-                <Link to="/login">Login Here</Link>
+              <p className="px-1 lg:px-6 text-xs lg:text-sm text-center text-[#AD6A34] font-serif">
+                New here?? Go to.....
+                 <Link to="/signup">Sign Up</Link>..... for create an account.
               </p>
             </div>
           </form>
