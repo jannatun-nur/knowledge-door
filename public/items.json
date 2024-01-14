@@ -4,6 +4,55 @@
     "name": "Product 4",
     "title": "Adipiscing Product",
     "price": "$59.99",
-    "button": "Add to Cart"
+    "button": "Add to Cart",
+    "button2":"Buy Now"
+},
+{
+    "image": "https://example.com/product4.jpg",
+    "name": "Product 4",
+    "title": "Adipiscing Product",
+    "price": "$59.99",
+    "button": "Add to Cart",
+    "button2":"Buy Now"
+},
+{
+    "image": "https://example.com/product4.jpg",
+    "name": "Product 4",
+    "title": "Adipiscing Product",
+    "price": "$59.99",
+    "button": "Add to Cart",
+    "button2":"Buy Now"
+},
+{
+    "image": "https://example.com/product4.jpg",
+    "name": "Product 4",
+    "title": "Adipiscing Product",
+    "price": "$59.99",
+    "button": "Add to Cart",
+    "button2":"Buy Now"
+},
+{
+    "image": "https://example.com/product4.jpg",
+    "name": "Product 4",
+    "title": "Adipiscing Product",
+    "price": "$59.99",
+    "button": "Add to Cart",
+    "button2":"Buy Now"
+},
+{
+    "image": "https://example.com/product4.jpg",
+    "name": "Product 4",
+    "title": "Adipiscing Product",
+    "price": "$59.99",
+    "button": "Add to Cart",
+    "button2":"Buy Now"
+},
+{
+    "image": "https://example.com/product4.jpg",
+    "name": "Product 4",
+    "title": "Adipiscing Product",
+    "price": "$59.99",
+    "button": "Add to Cart",
+    "button2":"Buy Now"
 }
 ]

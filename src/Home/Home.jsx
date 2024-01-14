@@ -1,6 +1,7 @@
 import Banner from "./Banner/Banner";
 import Books from "./Books/Books";
 import Service from "./Service/Service";
+import Writer from "./Writer/Writer";
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
            <Banner/>
            <Books/>
+           <Writer/>
            <Service/> 
         </div>
     );
