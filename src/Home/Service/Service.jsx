@@ -1,4 +1,5 @@
-
+import { FaSearch } from "react-icons/fa";
+import { GiDiscussion } from "react-icons/gi";
 import { MdGroups2 } from "react-icons/md";
 const Service = () => {
     return (
@@ -10,8 +11,16 @@ const Service = () => {
                 <p className="text-center">Find Partner</p>
             
             </section>
-
-            
+        {/* serach */}
+        <section>
+        <p><FaSearch /></p>
+        <p>Search Question</p>
+        </section>
+            {/* opinion */}
+            <section>
+                <p><GiDiscussion/></p>
+                <p>Share opinion</p>
+            </section>
             </div> 
         </div>
     );
