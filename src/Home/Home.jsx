@@ -1,6 +1,7 @@
 import Banner from "./Banner/Banner";
 
 import Books from "./Books/Books"
+import Contact from "./Contact/Contact";
 import Faq from "./Faq/Faq";
 import ItemsCard from "./Items/ItemsCard";
 import Service from "./Service/Service";
@@ -17,6 +18,7 @@ const Home = () => {
          
            <Service/> 
            <Faq/>
+           <Contact/>
         </div>
     );
 };
