@@ -12,7 +12,7 @@ useEffect( ()=>{
 },[])
     return (
         <div>
-            <div className="bg-blue-500 h-96">
+            <div className="grid grid-cols-3 lg:grid-cols-3 gap-2">
                 {
                     books.map( book=><ItemsCard key={book.name} book={book}></ItemsCard>)
                 }

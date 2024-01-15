@@ -5,7 +5,7 @@ import Contact from "./Contact/Contact";
 import Faq from "./Faq/Faq";
 import Items from "./Items/Items";
 
-import ItemsCard from "./Items/ItemsCard";
+
 
 import Service from "./Service/Service";
 import Writer from "./Writer/Writer";
