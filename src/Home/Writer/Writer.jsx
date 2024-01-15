@@ -11,7 +11,7 @@ const Writer = () => {
                 </section>
                 <section className=" rounded-lg flex  bg-amber-600 py-1 gap-3">
                     <img className="w-10 h-10 lg:w-16 lg:h-16 rounded-full" src="https://i.ibb.co/7gMc8NS/conan.jpg" alt="image" />
-                    <p className="text-gray-800 lg:mt-5 text-xs lg:text-xl mt-4 ">arthur canon doyle</p>
+                    <p className="text-gray-800 lg:mt-5 text-xs lg:text-xl mt-4 ">Arthur Canon Doyle</p>
                 </section>
                 <section className=" rounded-lg flex  bg-amber-600 py-1 gap-3">
                     <img className="w-10 h-10 lg:w-16 lg:h-16 rounded-full" src="https://i.ibb.co/bHfKk3J/michel.jpg" alt="image" />
