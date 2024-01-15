@@ -12,9 +12,9 @@ useEffect( ()=>{
 },[])
     return (
         <div>
-            <div>
+            <div className="bg-blue-500 h-96">
                 {
-                    books.map( book=><ItemsCard key={book._id} book={book}></ItemsCard>)
+                    books.map( book=><ItemsCard key={book.name} book={book}></ItemsCard>)
                 }
             </div>
         </div>

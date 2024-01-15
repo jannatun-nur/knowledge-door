@@ -1,58 +1,51 @@
 [
 {
-    "image": "https://example.com/product4.jpg",
+    "image": "https://i.ibb.co/QjGytmK/hamlet.jpg",
     "name": "Hamlet",
-    "title": "Adipiscing Product",
-    "price": "$59.99",
+    "title": "william shakespeare",
+    "price": "$60",
     "button": "Add to Cart",
     "button2":"Buy Now"
 },
 {
-    "image": "https://example.com/product4.jpg",
-    "name": "Product 4",
-    "title": "Adipiscing Product",
-    "price": "$59.99",
+    "image": "https://i.ibb.co/QmPjGcr/zero.jpg",
+    "name": "Zero to One",
+    "title": "Peter Theil",
+    "price": "$50",
     "button": "Add to Cart",
     "button2":"Buy Now"
 },
 {
-    "image": "https://example.com/product4.jpg",
-    "name": "Product 4",
-    "title": "Adipiscing Product",
-    "price": "$59.99",
+    "image": "https://i.ibb.co/GTpPWtw/mark.jpg",
+    "name": "Tom Sawyer",
+    "title": "Mark Twain",
+    "price": "$80",
     "button": "Add to Cart",
     "button2":"Buy Now"
 },
 {
-    "image": "https://example.com/product4.jpg",
-    "name": "Product 4",
-    "title": "Adipiscing Product",
-    "price": "$59.99",
+    "image": "https://i.ibb.co/QpGB25m/hard.jpg",
+    "name": "Hard times",
+    "title": "Carles Dickens",
+    "price": "$60",
     "button": "Add to Cart",
     "button2":"Buy Now"
 },
 {
-    "image": "https://example.com/product4.jpg",
-    "name": "Product 4",
-    "title": "Adipiscing Product",
-    "price": "$59.99",
+    "image": "https://i.ibb.co/jT81GHP/ana.jpg",
+    "name": "A dairy of a young girl",
+    "title": "Anne Frank",
+    "price": "$58",
     "button": "Add to Cart",
     "button2":"Buy Now"
 },
 {
-    "image": "https://example.com/product4.jpg",
-    "name": "Product 4",
-    "title": "Adipiscing Product",
-    "price": "$59.99",
-    "button": "Add to Cart",
-    "button2":"Buy Now"
-},
-{
-    "image": "https://example.com/product4.jpg",
-    "name": "Product 4",
-    "title": "Adipiscing Product",
-    "price": "$59.99",
+    "image": "https://i.ibb.co/NpYjFhK/sharlok.jpg",
+    "name": "Sharlok Homes",
+    "title": "Arthur Canon Doyle",
+    "price": "$70",
     "button": "Add to Cart",
     "button2":"Buy Now"
 }
+
 ]

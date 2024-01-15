@@ -3,7 +3,10 @@ import Banner from "./Banner/Banner";
 import Books from "./Books/Books"
 import Contact from "./Contact/Contact";
 import Faq from "./Faq/Faq";
+import Items from "./Items/Items";
+
 import ItemsCard from "./Items/ItemsCard";
+
 import Service from "./Service/Service";
 import Writer from "./Writer/Writer";
 
@@ -14,8 +17,7 @@ const Home = () => {
            <Banner/>
            <Books/>
            <Writer/>
-           <ItemsCard/>
-         
+         <Items/>
            <Service/> 
            <Faq/>
            <Contact/>
