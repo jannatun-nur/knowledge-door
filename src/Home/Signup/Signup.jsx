@@ -96,7 +96,7 @@ const Signup = () => {
                 name="Username"
                 id="Username"
                 placeholder="Username"
-                className="w-full px-2 lg:px-3  lg:py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none"
+                className="w-full px-2 lg:px-3  lg:py-2 rounded-md bg-[#AD6A34] text-white"
               />
             </div>
             <div>
@@ -108,7 +108,7 @@ const Signup = () => {
                 name="address"
                 id="address"
                 placeholder="address"
-                className="w-full px-2 lg:px-3  lg:py-2 rounded-md bg-white border-amber-700 text-[#AD6A34] border-none"
+                className="w-full px-2 lg:px-3  lg:py-2 rounded-md bg-[#AD6A34] text-white"
               />
             </div>
             <div>
@@ -120,7 +120,7 @@ const Signup = () => {
                 name="email"
                 id="email"
                 placeholder="@gmail.com"
-                className="w-full px-2 lg:px-3  lg:py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none"
+                className="w-full px-2 lg:px-3  lg:py-2 rounded-md bg-[#AD6A34] text-white"
               />
             </div>
             <div>
@@ -132,7 +132,7 @@ const Signup = () => {
                 name="password"
                 id="password"
                 placeholder="*****"
-                className="w-full px-2 lg:px-3 lg:py-2 rounded-md bg-white border border-[#AD6A34] text-[#AD6A34] border-none "
+                className="w-full px-2 lg:px-3 lg:py-2 rounded-md bg-[#AD6A34] text-white"
               />
             </div>
           </div>
