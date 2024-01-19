@@ -17,7 +17,7 @@ const Navbar = () => {
             <li className="hover:text-[#AD6A34] hover:bg-white px-2"><Link to="/about">About Us</Link></li>
             {user?.email ? (
               <li className=" px-2 flex">
-                 <li className="hover:text-[#AD6A34] hover:bg-white px-2"><Link to="/addtocart">My Cart</Link></li>
+                 <li className="hover:text-[#AD6A34] hover:bg-white px-2 "><Link to="/cart">My Cart</Link></li>
                 <button onClick={logout} className="hover:text-[#AD6A34] hover:bg-white px-2">LogOut</button>
 
               </li>

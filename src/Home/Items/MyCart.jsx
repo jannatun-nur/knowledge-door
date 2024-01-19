@@ -1,6 +1,6 @@
 
 
-const Cart = () => {
+const MyCart = ({book, MyCart}) => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Cart = () => {
     );
 };
 
-export default Cart;
+export default MyCart;
