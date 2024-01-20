@@ -12,7 +12,7 @@ import Signup from './Home/Signup/Signup';
 import AuthProvider from '../public/Provider/AuthProvider';
 import SignIn from './Home/SignIn/SignIn';
 import About from './Home/Banner/About/About';
-import MyCart from './Home/Items/MyCart';
+
 
 
 const router = createBrowserRouter([
@@ -35,11 +35,8 @@ const router = createBrowserRouter([
       {
         path:'/about',
         element:<About/>
-      },
-      {
-        path:'/cart',
-        element:<MyCart/>
       }
+     
     ]
   },
  

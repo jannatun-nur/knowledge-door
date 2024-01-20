@@ -15,9 +15,9 @@ const Navbar = () => {
           <ul className="flex gap-1 lg:gap-4">
             <li className="hover:text-[#AD6A34] hover:bg-white px-2"><Link to="/">Home</Link></li>
             <li className="hover:text-[#AD6A34] hover:bg-white px-2"><Link to="/about">About Us</Link></li>
-            {user?.email ? (
+            {user ? (
               <li className=" px-2 flex">
-                 <li className="hover:text-[#AD6A34] hover:bg-white px-2 "><Link to="/cart">My Cart</Link></li>
+               
                 <button onClick={logout} className="hover:text-[#AD6A34] hover:bg-white px-2">LogOut</button>
 
               </li>

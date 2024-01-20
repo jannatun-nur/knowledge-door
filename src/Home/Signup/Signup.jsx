@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import gif from "../../../public/assets/image/signup.gif";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import app from "../../../public/firebase/firebase.config";
@@ -9,6 +9,7 @@ import Swal from "sweetalert2";
 const Signup = () => {
 
   const auth = getAuth(app);
+  const navigate = useNavigate()
     
   const {createUser}=useContext(AuthContext)
   
@@ -61,7 +62,7 @@ const Signup = () => {
       showConfirmButton: false,
       timer: 1500
     });
-   
+   navigate('/signin')
    })
    .catch(error=>{
     Swal.fire({

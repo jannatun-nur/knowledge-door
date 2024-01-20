@@ -1,7 +1,25 @@
-import { useState } from "react";
-import MyCart from "./MyCart";
+import { useContext } from "react";
+import { AuthContext } from "../../../public/Provider/AuthProvider";
+import Swal from "sweetalert2";
 
-const ItemsCard = ({ book, onAddToCart }) => {
+const ItemsCard = ({ book}) => {
+  const {user} =useContext(AuthContext)
+  const handleBuy =(event)=>{
+    event.preventDefault()
+
+    {
+      user?.(
+        Swal.fire({
+          
+          text: "Your order has been taken",
+          icon: "success"
+        })
+
+      )
+    
+    }
+    
+  }
   const { name, image, title, price, button, button2 } = book;
 
   return (
@@ -14,11 +32,9 @@ const ItemsCard = ({ book, onAddToCart }) => {
           <p className="text-sm lg:text-xl">{name}</p>
           <p className="font-semibold">{title}</p>
           <p>{price}</p>
-          <button className="text-white bg-[#AD6A34] rounded-lg px-4">
-            {button}
-          </button>
+       
           <button
-            onClick={() => onAddToCart(book)}
+           onClick={handleBuy}
             className="text-[#AD6A34] rounded-lg px-4"
           >
             {button2}
